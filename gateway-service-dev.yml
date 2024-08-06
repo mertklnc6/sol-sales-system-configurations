@@ -14,8 +14,7 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      default-filters:
-        - AuthenticationFilter
+      
       routes[0]:
         id: discovery-server
         predicates[0]: Path=/eureka/web
